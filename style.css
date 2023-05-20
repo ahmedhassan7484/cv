@@ -1,0 +1,421 @@
+
+.item1{grid-area: header; height: 50px ;}
+.item2{grid-area: menue; }
+.item3{grid-area: body1;}
+.item4{grid-area: body2;}
+.item5{grid-area: body3; }
+.item6{grid-area: body4; }
+.item7{grid-area: footer; }
+.item11{grid-area: f1;}
+.item10{grid-area: sld; height: 600px; width: 100%;   }
+.item100{grid-area: btn1;}
+.gradCountaner{
+    display: grid;
+   
+    grid-template-areas: 'header header header header header header header'
+                          'sld sld sld sld sld sld sld'
+                          'body2 body2 body2 body2 body2 body2 body2'
+                          'body1 body1 body1 body1 body1 body1 body1'
+                          'body4 body4 body4 body4 body4 body4 body4'
+                          
+                          'body3 body3 body3 body3 body3 body3 body3'
+                          'menue menue menue menue menue menue menue'
+                          'btn1 btn1 btn1 btn1 btn1 btn1 btn1'
+                          'footer footer footer footer footer footer footer'
+                          'f1 f1 f1 f1 f1 f1 f1'
+    ;
+    gap: 10px;
+   
+}
+.x{
+    width: 90%;
+    height:300px;
+    padding: 20px;
+}
+.det1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom:2px solid white ;
+    margin-bottom:20px ;
+}
+.det2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h5>a{
+    font-weight: bold;
+    text-decoration: none;
+    color:blue
+}
+li>a{
+    font-weight: bold;
+    text-decoration: none;
+    color:blue
+}
+.pra1{
+    position:absolute;
+    top: 50%;
+    left:25%;
+    color: aliceblue;
+}
+/*.card{
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 4px 4px 8px red;
+}*/
+.item11>a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+.card {
+    width:390px;
+    height: 554px;
+    background: #d3d3d3;
+    display: inline-flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .one {
+    width: 90%;
+    height: 95%;
+    background-color: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+  }
+  
+  .two {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 3%;
+    background-color: #9c9c9c;
+    transition: 1s;
+    transition-delay: 0.2s;
+  }
+  
+  .three {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 3%;
+    background-color: #797979;
+    transition: 0.9s;
+    transition-delay: 0.2s;
+  }
+  
+  .four {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ececec;
+    opacity: 0;
+    border-radius: 3%;
+    background-color: #5a5a5a;
+    transition: 0.8s;
+    transition-delay: 0.2s;
+  }
+  
+  .five {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ececec;
+    opacity: 0;
+    border-radius: 3%;
+    background-color: #424242;
+    transition: 0.7s;
+    transition-delay: 0.2s;
+  }
+  
+  .six {
+    width: 90%;
+    height: 95%;
+    color: #ececec;
+    text-align: center;
+    opacity: 0;
+    border-radius: 3%;
+    background-color: #302f2f;
+    transition: 0.6s;
+    transition-delay: 0.2s;
+  }
+  
+  .text2 {
+   
+    padding-top: 50%;
+    transform: translateY(-5em);
+    transition: 0.2s;
+    opacity: 0;
+  }
+  
+  .card:hover .two {
+    opacity: 1;
+    transition: 0.4s;
+  }
+  
+  .card:hover .three {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  .card:hover .four {
+    opacity: 1;
+    transition: 0.6s;
+  }
+  
+  .card:hover .five {
+    opacity: 1;
+    transition: 0.7s;
+  }
+  
+  .card:hover .six {
+    opacity: 1;
+    transition: 0.8s;
+  }
+  
+  .card:hover .text1 {
+    opacity: 0;
+  }
+  
+  .card:hover .text2 {
+    transform: translateY(2em);
+    transition-delay: 0.5s;
+    opacity: 1;
+  }
+  
+  .text1 {
+    position: absolute;
+    opacity: 1;
+  }
+  
+
+
+
+  /**********************************************/
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  #container-stars {
+    position: absolute;
+    top: -6px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+  }
+  
+  strong {
+    z-index: 2;
+    font-family: 'Avalors Personal Use';
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px white;
+  }
+  
+  #glow {
+    position: absolute;
+  
+    display: flex;
+    width: 12rem;
+  }
+  
+  .circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+  }
+  
+  .circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+  }
+  
+  .circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+  }
+  
+  .btn:hover #container-stars {
+    z-index: -2;
+    background-color: #212121;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1)
+  }
+  
+  .btn:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+  }
+  
+  .btn:active .circle {
+    background: #FE53BB;
+  }
+  
+  #stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+  }
+  
+  #stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+  }
+  
+  #stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+  }
+  
+  #stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+  }
+  
+  #stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(-135rem);
+    }
+  }
+  
+  @keyframes animStarRotate {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes gradient_301 {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulse_3011 {
+    0% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  /********************************************/
+
+
+  
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: lightblue;
+    transition: all 0.5s;
+  }
+  
+  .card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  
+  
+  
