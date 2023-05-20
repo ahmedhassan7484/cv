@@ -1,4 +1,8 @@
 
+
+html {
+  scroll-behavior:smooth;
+ }
 .item1{grid-area: header; height: 50px ;}
 .item2{grid-area: menue; }
 .item3{grid-area: body1;}
@@ -9,15 +13,17 @@
 .item11{grid-area: f1;}
 .item10{grid-area: sld; height: 600px; width: 100%;   }
 .item100{grid-area: btn1;}
+.item101{grid-area: pho;}
 .gradCountaner{
     display: grid;
    
     grid-template-areas: 'header header header header header header header'
                           'sld sld sld sld sld sld sld'
-                          'body2 body2 body2 body2 body2 body2 body2'
+                          
+                          
                           'body1 body1 body1 body1 body1 body1 body1'
                           'body4 body4 body4 body4 body4 body4 body4'
-                          
+                          'body2 body2 body2 body2 body2 body2 body2'
                           'body3 body3 body3 body3 body3 body3 body3'
                           'menue menue menue menue menue menue menue'
                           'btn1 btn1 btn1 btn1 btn1 btn1 btn1'
@@ -28,9 +34,32 @@
    
 }
 .x{
-    width: 90%;
-    height:300px;
-    padding: 20px;
+
+  border: 2px solid #FE53BB;
+  border-radius: 25px;
+  box-shadow: 4px 4px 8px #FE53BB;
+}
+.x:hover{
+  
+  height: 340px;
+
+}
+.x1{
+  font-weight: bolder;
+  font-size: 60px;
+  color: #510834;
+
+
+}
+.p12{
+ 
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-family: 'Times New Roman', Times, serif;
+ 
+  
+
 }
 .det1{
     display: flex;
@@ -235,6 +264,7 @@ li>a{
   #container-stars {
     position: absolute;
     top: -6px;
+    right: -3px;
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -415,7 +445,6 @@ li>a{
     left: 0;
     border-radius: 0 100%  0 15px;
   }
-  
   
   
   
