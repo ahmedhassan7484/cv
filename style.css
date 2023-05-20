@@ -1,5 +1,7 @@
 
-
+body{
+  background-color:#5a5a5a;
+}
 html {
   scroll-behavior:smooth;
  }
@@ -34,7 +36,8 @@ html {
    
 }
 .x{
-
+  max-height: 350px;
+  height: 300px;
   border: 2px solid #FE53BB;
   border-radius: 25px;
   box-shadow: 4px 4px 8px #FE53BB;
@@ -52,7 +55,7 @@ html {
 
 }
 .p12{
- 
+padding-top: 20px;
   font-size: 30px;
   text-align: center;
   line-height: 30px;
